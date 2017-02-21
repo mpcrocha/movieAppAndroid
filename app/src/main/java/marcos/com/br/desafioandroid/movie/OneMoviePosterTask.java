@@ -34,7 +34,7 @@ public class OneMoviePosterTask extends AsyncTask {
 
                     Bitmap bit = BitmapFactory.decodeStream(
                             (InputStream)new URL(URLBase+params[0]).getContent());
-                    sc = Bitmap.createScaledBitmap(bit, 400, 400, true);
+                    sc = Bitmap.createScaledBitmap(bit, 300, 300, true);
 
             } catch (Exception e) {e.printStackTrace();}
 

@@ -5,52 +5,87 @@
     android:layout_height="match_parent"
     >
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieName"
-        />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/android"
-        android:id="@+id/moviePosterDetail" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/movieName"
+            />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieYear" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/movieName"
+            android:id="@+id/movieYear"
+            android:textAlignment="textEnd" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieName2" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieYear"
+            android:layout_alignParentRight="true"
+            android:id="@+id/movieName2"
+            android:textAlignment="viewEnd" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieGenre" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieName2"
+            android:layout_alignParentRight="true"
+            android:id="@+id/movieGenre"
+            android:textAlignment="viewEnd" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieDuration" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieGenre"
+            android:layout_alignParentRight="true"
+            android:id="@+id/movieDuration"
+            android:textAlignment="viewEnd" />
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:id="@+id/movieRating"
-        android:layout_weight="0.07" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/movieRating"
+            android:layout_weight="0.07"
+            android:layout_below="@+id/movieDuration"
+            android:layout_toRightOf="@+id/moviePosterDetail"
+            android:layout_toEndOf="@+id/moviePosterDetail" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieSummary"
-        android:layout_weight="0.60" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieSummary"
+            android:layout_weight="0.60"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/moviePosterDetail" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/android"
+            android:id="@+id/moviePosterDetail"
+            android:layout_marginEnd="202dp"
+            android:layout_below="@+id/movieName"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="0dp" />
+
+    </RelativeLayout>
+
 </LinearLayout>
