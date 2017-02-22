@@ -16,7 +16,8 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:id="@+id/movieName"
-            />
+            android:background="@android:color/holo_green_dark"
+            android:textSize="28sp" />
 
         <TextView
             android:text="TextView"
@@ -25,7 +26,8 @@
             android:layout_alignParentRight="true"
             android:layout_below="@id/movieName"
             android:id="@+id/movieYear"
-            android:textAlignment="textEnd" />
+            android:textAlignment="textEnd"
+            android:textSize="18sp" />
 
         <TextView
             android:text="TextView"
@@ -34,7 +36,8 @@
             android:layout_below="@id/movieYear"
             android:layout_alignParentRight="true"
             android:id="@+id/movieName2"
-            android:textAlignment="viewEnd" />
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
 
         <TextView
             android:text="TextView"
@@ -43,7 +46,8 @@
             android:layout_below="@id/movieName2"
             android:layout_alignParentRight="true"
             android:id="@+id/movieGenre"
-            android:textAlignment="viewEnd" />
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
 
         <TextView
             android:text="TextView"
@@ -52,17 +56,8 @@
             android:layout_below="@id/movieGenre"
             android:layout_alignParentRight="true"
             android:id="@+id/movieDuration"
-            android:textAlignment="viewEnd" />
-
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_alignParentRight="true"
-            android:id="@+id/movieRating"
-            android:layout_weight="0.07"
-            android:layout_below="@+id/movieDuration"
-            android:layout_toRightOf="@+id/moviePosterDetail"
-            android:layout_toEndOf="@+id/moviePosterDetail" />
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
 
         <TextView
             android:text="TextView"
@@ -71,20 +66,31 @@
             android:id="@+id/movieSummary"
             android:layout_weight="0.60"
             android:textAlignment="viewEnd"
+            android:layout_marginBottom="39dp"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/moviePosterDetail" />
+            android:textSize="18sp" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/android"
             android:id="@+id/moviePosterDetail"
-            android:layout_marginEnd="202dp"
-            android:layout_below="@+id/movieName"
-            android:layout_alignParentLeft="true"
 
-            android:layout_marginLeft="0dp" />
+            android:layout_below="@+id/movieDuration"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="26dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:id="@+id/movieRating"
+            android:layout_weight="0.06"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_below="@+id/moviePosterDetail"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 
